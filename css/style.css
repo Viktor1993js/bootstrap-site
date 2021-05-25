@@ -1,0 +1,39 @@
+section {
+  padding-top: 50px;
+}
+
+* {
+  font-family: 'Dancing Script', cursive;
+}
+
+h2 {
+  padding-bottom: 50px;
+}
+
+.carousel-control-prev-icon {
+  background-image: url(../img/left-arrow.svg);
+}
+
+.carousel-control-next-icon {
+  background-image: url(../img/next.svg);
+}
+
+.carousel-control-next-icon, .carousel-control-prev-icon {
+  width: 20px;
+}
+
+.carousel-control-prev {
+  left: -110px;
+}
+
+.carousel-control-next {
+  right: -110px;
+}
+
+.card-body {
+  text-align: center;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link {
+  padding-left: 4.5rem;
+}
