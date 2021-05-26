@@ -22,13 +22,13 @@ h2 {
   width: 20px;
 }
 
-.carousel-control-prev {
+/* .carousel-control-prev {
   left: -110px;
 }
 
 .carousel-control-next {
   right: -110px;
-}
+} */
 
 .card-body {
   text-align: center;
@@ -36,9 +36,4 @@ h2 {
 
 .navbar-expand-lg .navbar-nav .nav-link {
   padding-left: 4.5rem;
-}
-
-.container-bg {
-  background-image: url(https://hightech.fm/wp-content/uploads/2019/12/sea-ocean-underwater-rays-corals-fishes-nature-live-wallpaper-free-download-1920x1080-1560x877.jpg);
-  background-size: cover;
 }
