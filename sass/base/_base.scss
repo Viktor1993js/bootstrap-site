@@ -1,0 +1,26 @@
+section {
+    padding-top: 5rem;
+}
+
+
+.carousel-control-prev-icon {
+    background-image: url(../img/previous.svg);
+}
+
+.carousel-control-next-icon {
+    background-image: url(../img/next.svg);
+}
+
+.carousel-control-next-icon,
+.carousel-control-prev-icon {
+    width: 2rem;
+}
+
+.card-body {
+    text-align: center;
+  }
+  
+  .navbar-expand-lg .navbar-nav .nav-link {
+    padding-left: 4.5rem;
+  }
+  
