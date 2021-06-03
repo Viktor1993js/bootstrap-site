@@ -27,9 +27,9 @@ h2 {
   perspective: 150rem;
   -moz-perspective: 150rem;
   position: relative;
-  height: 30rem; }
+  height: 28rem; }
   .card-item__side {
-    height: 30rem;
+    height: 28rem;
     transition: all .8s ease;
     position: absolute;
     top: 0;
@@ -67,15 +67,15 @@ h2 {
     text-align: right;
     color: #fff;
     position: absolute;
-    top: 2rem;
-    right: 2rem;
+    top: 1.5rem;
+    right: .5rem;
     width: 75%; }
   .card-item__heading-span {
     padding: 1rem 1.5rem;
     box-decoration-break: clone;
     -webkit-box-decoration-break: clone; }
     .card-item__heading-span--1 {
-      background-image: linear-gradient(to right bottom, rgba(255, 185, 0, 0.85), rgba(255, 119, 48, 0.85)); }
+      background-image: linear-gradient(to right bottom, rgba(41, 152, 255, 0.65), rgba(86, 67, 250, 0.55)); }
   .card-item__details {
     padding: 1rem; }
     .card-item__details ul {
