@@ -3,6 +3,7 @@ function Tooltip () {
     this.tooltip.style.visibility = "hidden";
     this.tooltip.style.position = "absolute";
     this.tooltip.className = "mytooltip";
+    this.tooltip.style.zIndex = 1000;
 }
 
 Tooltip.prototype.show = function (text, x, y) {
@@ -20,21 +21,36 @@ Tooltip.prototype.hide = function () {
     this.tooltip.style.visibility = "hidden";
 }
 
-window.addEventListener("load", function () {
+window.addEventListener("load", function (){
     let p = document.getElementsByTagName("p");
+    let button = document.getElementsByTagName("button");
+    let a = document.getElementsByTagName("a");
     for (let i = 0; i < p.length; i++) {
         p[i].addEventListener("mousemove", moveHandler);
         p[i].addEventListener("mouseout", outHandler);
     }
+    for (let i = 0; i < button.length; i++) {
+        button[i].addEventListener("mousemove", moveHandlerButton);
+        button[i].addEventListener("mouseout", outHandler);
+    }
+    for (let i = 0; i < a.length; i++) {
+        a[i].addEventListener("mousemove", moveHandlerButton);
+        a[i].addEventListener("mouseout", outHandler);
+    }
 })
 
-let k = new Tooltip();
+let tooltip = new Tooltip();
 
 function moveHandler (e) {
     if (!e) e = window.event;
-    k.show("This is tooltip", e.clientX + 20, e.pageY + 20);
+    tooltip.show("This is text", e.clientX + 15, e.pageY + 15);
 }
 
 function outHandler () {
-    k.hide();
+    tooltip.hide();
+}
+
+function moveHandlerButton (e) {
+    if (!e) e = window.event;
+    tooltip.show("Click me", e.clientX + 15, e.pageY + 15);
 }
