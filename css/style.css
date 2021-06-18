@@ -6,9 +6,6 @@
     margin-left: 0%;
     width: 100%; } }
 
-section {
-  padding-top: 5rem; }
-
 .carousel-control-prev-icon {
   background-image: url(../img/previous.svg); }
 
@@ -29,7 +26,7 @@ section {
   font-family: 'Dancing Script', cursive; }
 
 h2 {
-  padding-bottom: 5rem; }
+  padding: 2rem; }
 
 .card-item {
   perspective: 150rem;
@@ -114,10 +111,12 @@ h2 {
     font-size: 2rem;
     font-weight: 100; }
 
-.section-active {
-  animation-duration: 3s;
-  animation-name: slidein;
+article {
   overflow: hidden; }
+
+.section--active {
+  animation-duration: 3s;
+  animation-name: slidein; }
 
 .mytooltip {
   color: red;

@@ -1,6 +1,8 @@
+article {
+  overflow: hidden;
+}
 
-.section-active {
+.section--active {
   animation-duration: 3s;
   animation-name: slidein;
-  overflow: hidden;
 }
